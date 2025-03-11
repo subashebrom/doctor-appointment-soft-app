@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="css/patient-info.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ==== LEFT AND TOP ITEMS ==== -->
+    <div class="sh-left-and-top-items-section">
+        <!-- === LEFT SIDE MENU ITEMS ICONS === -->
+        <div class="sh-left-side-menu-container-icon">
+            <div class="sh-brand-logo-icons">
+                <i class="fa-solid fa-house-medical"></i>
+            </div>
+
+            <div class="sh-left-side-menu-items-icons">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-home"></i></a></li>
+                    <li><a href="patient-info.html"><i class="fa-sharp-doutone fa-solid fa-hospital-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-notes-medical"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ================================ -->
+        <div class="sh-left-side-menu-container">
+            <div class="sh-brand-logo">
+                <i class="fa-solid fa-house-medical">HOUSE MEDICAL</i>
+            </div>
+
+            <div class="sh-left-side-menu-items">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-home"></i>হোম</a></li>
+                    <li><a href="patient-info.html"><i class="fa-sharp-doutone fa-solid fa-hospital-user"></i>রোগীর
+                            তথ্য</a>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-notes-medical"></i>অ্যাপয়েন্টমেন্টের বিবরণ</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i>ডাক্তারের সময়সূচী</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i>ডাক্তারের প্রোফাইল</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- === RIGHT ITEM DETAILS SECTION === -->
+        <div class="sh-right-item-details-section">
+            <!-- === TOP NAV ITEMS === -->
+            <div class="sh-doctor-nav-section">
+                <div class="sh-doctor-nav-left-container">
+                    <ul>
+                        <li onclick="hidemenu()" class="sh-menu-hover"><i class="fa-solid fa-bars-staggered"></i></li>
+                        <li onclick="showSidemenu()" class="show-short-menu"><i class="fa-solid fa-arrow-right"></i>
+                        </li>
+                        <li><button type="button" name="button" class="appointment-btn">সাক্ষাৎকার</button></li>
+                    </ul>
+                </div>
+                <div class="sh-doctor-nav-right-container">
+                    <!-- === NOTIFICATION ICON === -->
+                    <div class="sh-notificatio-icon"><i class="fa-solid fa-bell"></i></div>
+                    <div class="sh-doctor-profile">
+                        <div class="sh-doctor-name">
+                            <h4>Dr.Abir Hossain</h4>
+                            <p>Admin</p>
+                        </div>
+                        <div class="sh-doctor-image">
+                            <img src="img/doctor_2785482.png" alt="DOC">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==== PATIENT INFO AND PAYMENT METHODS ==== -->
+            <div class="sh-patient-info-payment-methods-section">
+                <!-- === PATIENTS INFORMATION === -->
+                <div class="sh-patient-information-section">
+                    <div class="patient-info-text">
+                        <h2>রোগীর তথ্য</h2>
+                    </div>
+                    <div class="sh-patient-information-container">
+                        <div class="sh-info-box">
+                            <label for="text">রোগীর প্রথম নাম</label>
+                            <input type="text" placeholder="মোঃ আবির" name="" id="">
+                        </div>
+                        <div class="sh-info-box">
+                            <label for="text">রোগীর পদবি</label>
+                            <input type="text" placeholder="হোসেন" name="" id="">
+                        </div>
+                    </div>
+                    <div class="sh-patient-information-container">
+                        <div class="sh-info-box">
+                            <label for="text">রোগীর ঠিকানা</label>
+                            <input type="text" name="" placeholder="মডার্ন মোড় রংপুর " id="">
+                        </div>
+                        <div class="sh-info-box">
+                            <label for="text">ইমেইল</label>
+                            <input type="text" name="" placeholder="abir@gmail.com" id="">
+                        </div>
+                    </div>
+                    <div class="sh-patient-information-container">
+                        <div class="sh-info-box">
+                            <label for="text">রোগীর বয়স </label>
+                            <input type="text" name="" placeholder="20 বছর " id="">
+                        </div>
+                        <div class="sh-info-box">
+                            <label for="text">লিঙ্গ</label>
+                            <select name="" id="">
+                                <option value="" name="">পুরুষ</option>
+                                <option value="" name="">মহিলা</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sh-patient-information-container">
+                        <div class="sh-info-box">
+                            <label for="text">রোগীর ওজন </label>
+                            <input type="text" name="" placeholder="৬০ কেজি (ঐচ্ছিক) " id="">
+                        </div>
+                        <div class="sh-info-box">
+                            <label for="text">রক্তের গ্রুপ</label>
+                            <select name="" id="">
+                                <option value="" name="">A+ (VE)</option>
+                                <option value="" name="">A- (VE)</option>
+                                <option value="" name="">B+ (VE)</option>
+                                <option value="" name="">O+ (VE)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sh-patient-information-container">
+                        <div class="sh-info-box">
+                            <label for="text">রোগীর অবস্থা</label>
+                            <select name="" id="">
+                                <option value="" name="">নতুন রোগী</option>
+                                <option value="" name="">পুরাতন রোগী</option>
+                            </select>
+                        </div>
+                        <div class="sh-info-box">
+                            <label for="text">পরিদর্শন ফি </label>
+                            <select name="" id="">
+                                <option value="" name="">১০০০ টাকা</option>
+                                <option value="" name="">৭০০ টাকা</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sh-patient-information-container">
+                        <div class="sh-info-box">
+                            <label for="text">বৈবাহিক অবস্থা</label>
+                            <select name="" id="">
+                                <option value="" name="">বিবাহিত</option>
+                                <option value="" name="">অবিবাহিত</option>
+                            </select>
+                        </div>
+                        <div class="sh-info-box">
+                            <label for="text">যোগাযোগ নম্বর</label>
+                            <input type="text" name="" placeholder="01315-291293" id="">
+                        </div>
+                    </div>
+                </div>
+                <!-- === PAYMENT METHODS === -->
+                <div class="sh-payment-methods-section">
+                    <div class="patient-info-text">
+                        <h2>পরিদর্শন ফি</h2>
+                    </div>
+                    <div class="sh-payment-container">
+                        <button type="button" name="button" class="sh-payment-btn-style sh-payment-btn-bg-cash">নগদ অর্থ
+                            প্রদান</button>
+                        <button type="button" name="button" class="sh-payment-btn-style sh-payment-btn-bg-bkash"><img
+                                src="img/bkash logo.png" alt=""></button>
+                        <button type="button" name="button" class="sh-payment-btn-style sh-payment-btn-bg-bkash"><img
+                                src="img/nagad.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- === SUBMIT BUTTON === -->
+            <div class="sh-submit-btn"><button type="submit" name="submit">জমা করুন </button></div>
+            <!-- ==== FOOTER ==== -->
+            <div class="sh-footer-section">
+                <p>Design by subas hebrom (Abir)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- === js link === -->
+    <script src="js/index.js"></script>
+
+    <!-- === FONTS ASESOME LINK === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

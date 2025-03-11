@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Siliguri", sans-serif;
+}
+:root{
+    --bg-color: #f1f9ff;
+    --btn-bg-color: #095d7e;
+    --btn-hover: #0065c0;
+    --secondary-size: 1.20rem; /* 20px */
+    --primary-size: 1rem; /* 16px */
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* ==== LEFT AND TOP ITEMS ==== */
+.sh-left-and-top-items-section{
+    width: 100%;
+    display: flex;
+}
+/* === JUST ICONS === */
+.sh-left-side-menu-container-icon{
+    width: 60px;
+    height: 100vh;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    background: var(--bg-color);
+    display: none;
+    left: 0;
+    top: 0;
+    position: sticky;
+}
+.sh-brand-logo-icons{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    top: 0;
+    position: sticky;
+    color: var(--btn-bg-color);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+.sh-left-side-menu-items-icons ul{
+    width: 100%;
+}
+.sh-left-side-menu-items-icons li{
+    height: 50px;
+}
+.sh-left-side-menu-items-icons a{
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    font-size: var(--primary-size);
+    color: #708090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sh-left-side-menu-items-icons a:hover{
+    background: var(--btn-bg-color);
+    color: white;
+}
+/* ================================ */
+/* === LEFT SIDE MENU ITEMS === */
+.sh-left-side-menu-container{
+    left: 0;
+    top: 0;
+    position: sticky;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--bg-color);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+/* === BRAND LOGO === */
+.sh-brand-logo{
+    height: 80px;
+    color: var(--btn-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow:  3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+/* === MENU ITEMS === */
+.sh-left-side-menu-items ul{
+    width: 100%;
+}
+.sh-left-side-menu-items li{
+    height: 50px;
+}
+.sh-left-side-menu-items a{
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+    transition: all 0.3s ease-in-out;
+    font-size: var(--primary-size);
+    color: #708090;
+    display: flex;
+    align-items: center;
+}
+.sh-left-side-menu-items a:hover{
+    background-color: var(--btn-hover);
+    color: white;
+}
+.sh-left-side-menu-items i{
+    margin-right: 5px;
+}
+/* === RIGHT ITEM DETAILS SECTION === */
+.sh-right-item-details-section{
+    width: 100%;
+}
+/* === TOP NAV ITEMS === */
+.sh-doctor-nav-section{
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    background: white;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* === DOCTOR NAV LEFT CONTAINER === */
+.sh-doctor-nav-left-container ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sh-menu-hover{
+    color: black;
+}
+.show-short-menu{
+    display: none;
+}
+.appointment-btn{
+    transition: all 0.3s ease-in-out;
+    background: var(--bg-color);
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: var(--primary-size);
+    color: black;
+}
+.appointment-btn:hover{
+    background: var(--btn-hover);
+    color: white    ;
+}
+/* === DOCTOR NAV RIGHT CONTAINER === */
+.sh-doctor-nav-right-container{
+    display: flex;
+    align-items: center;
+}
+/* === NOTIFICATION ICON */
+.sh-notificatio-icon{
+    position: relative;
+    margin-right: 30px;
+    color: #B22222;
+    font-size: var(--secondary-size);
+}
+.sh-notificatio-icon i::after{
+    position: absolute;
+    content: "10";
+    text-align: center;
+    font-size: 9px;
+    padding: 3px;
+    border-radius: 50%;
+    color: white;
+    background-color: #ff000093;
+    margin-top: -10px;
+    margin-left: -4px;
+
+}
+/* === DOCTOR PROFILE === */
+.sh-doctor-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sh-doctor-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sh-doctor-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #708090;
+}
+/*  === FILLTER === */
+.sh-fillter{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sh-fillter input{
+    width: 25%;
+    border: 1px solid #708090;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 1rem;
+}
+.sh-fillter input:focus{
+    outline: none;
+}
+/* === REVENUE SECTION === */
+.sh-revenue-section{
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+}
+.sh-revenue-container{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sh-revenue-container p{
+    font-size: 1.50rem;
+}
+.sh-revenue-container i{
+    margin-right: 10px;
+}
+.sh-revenue-container-one-bg{
+    background: #66BB6A;
+    color: #E2E8F0;
+}
+.sh-revenue-container-two-bg{
+    background: #008080;
+    color: #E2E8F0;
+}
+.sh-revenue-container-three-bg{
+    background: #4682B4;
+    color: #E2E8F0;
+}
+.sh-revenue-container-four-bg{
+    background: #2F4F4F;
+    color: #E2E8F0;
+}
+/* === PATIENTS SECTION === */
+.sh-patients-section{
+    width: 100%;
+    height: 60vh;
+    padding: 20px;
+    overflow: auto;
+}
+.sh-patients-section table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.sh-patients-section th, td{
+    border: 1px solid #70809063;
+    padding: 10px 15px;
+    color: #708090;
+}
+.sh-new-patients{
+    position: relative;
+    margin-bottom: 20px;
+}
+.sh-new-patients h1{
+    font-size: 1.5rem;
+    color: #708090;
+}
+.sh-new-patients h1::before{
+    position: absolute;
+    content: "";
+    background-color: #2F4F4F;
+    width: 150px;
+    height: 2px;
+    bottom: 0;
+}
+.sh-patients-name{
+    width: 25%;
+    text-align: left;
+}
+.sh-patients-address{
+    width: 15%;
+    text-align: left;
+}
+.sh-text-center{
+    text-align: center;
+}
+.sh-action-btns{
+    text-align: center;
+}
+.sh-action-btn-style{
+    border: none;
+    background: none;
+    padding: 0 5px;
+    font-size: 1rem;
+}
+.sh-check-btn{
+    color: #66BB6A;
+}
+.sh-delete-btn{
+    color: #b22222b1;
+}
+.sh-footer-section{
+    padding: 20px;
+    text-align: center;
+    box-shadow: -3px -3px 5px rgb(0, 0, 0, 0.1);
+}
