@@ -269,6 +269,10 @@ a{
     color: #708090;
 }
 .sh-new-patients{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     margin-bottom: 20px;
 }
@@ -283,6 +287,13 @@ a{
     width: 150px;
     height: 2px;
     bottom: 0;
+}
+.sh-new-patients input{
+    width: 25%;
+    border: 1px solid #708090;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: var(--primary-size);
 }
 .sh-patients-name{
     width: 25%;

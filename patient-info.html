@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- === css link === -->
     <link rel="stylesheet" href="css/patient-info.css">
-    <title>Document</title>
+    <title>Patient Info</title>
 </head>
 
 <body>
@@ -22,9 +22,9 @@
                 <ul>
                     <li><a href="index.html"><i class="fa-solid fa-home"></i></a></li>
                     <li><a href="patient-info.html"><i class="fa-sharp-doutone fa-solid fa-hospital-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-notes-medical"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i></a></li>
+                    <li><a href="appointment-details.html"><i class="fa-solid fa-notes-medical"></i></a></li>
+                    <li><a href="doctor-time-manage.html"><i class="fa-solid fa-user-doctor"></i></a></li>
+                    <li><a href="doctor-profile.html"><i class="fa-solid fa-user-doctor"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -40,9 +40,9 @@
                     <li><a href="patient-info.html"><i class="fa-sharp-doutone fa-solid fa-hospital-user"></i>রোগীর
                             তথ্য</a>
                     </li>
-                    <li><a href="#"><i class="fa-solid fa-notes-medical"></i>অ্যাপয়েন্টমেন্টের বিবরণ</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i>ডাক্তারের সময়সূচী</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user-doctor"></i>ডাক্তারের প্রোফাইল</a></li>
+                    <li><a href="appointment-details.html"><i class="fa-solid fa-notes-medical"></i>অ্যাপয়েন্টমেন্টের বিবরণ</a></li>
+                    <li><a href="doctor-time-manage.html"><i class="fa-solid fa-user-doctor"></i>ডাক্তারের সময়সূচী</a></li>
+                    <li><a href="doctor-profile.html"><i class="fa-solid fa-user-doctor"></i>ডাক্তারের প্রোফাইল</a></li>
                 </ul>
             </div>
         </div>
@@ -157,6 +157,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- === PAYMENT METHODS === -->
                 <div class="sh-payment-methods-section">
                     <div class="patient-info-text">
@@ -165,10 +166,14 @@
                     <div class="sh-payment-container">
                         <button type="button" name="button" class="sh-payment-btn-style sh-payment-btn-bg-cash">নগদ অর্থ
                             প্রদান</button>
-                        <button type="button" name="button" class="sh-payment-btn-style sh-payment-btn-bg-bkash"><img
-                                src="img/bkash logo.png" alt=""></button>
-                        <button type="button" name="button" class="sh-payment-btn-style sh-payment-btn-bg-bkash"><img
-                                src="img/nagad.png" alt=""></button>
+                        <div class="sh-nagad-bksh">
+                            <button type="button" name="button"
+                                class="sh-payment-btn-style sh-payment-btn-bg-bkash"><img src="img/bkash logo.png"
+                                    alt=""></button>
+                            <button type="button" name="button"
+                                class="sh-payment-btn-style sh-payment-btn-bg-bkash"><img src="img/nagad.png"
+                                    alt=""></button>
+                        </div>
                     </div>
                 </div>
             </div>

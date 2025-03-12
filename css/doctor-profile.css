@@ -204,12 +204,23 @@ a{
     width: 100%;
     display: flex;
 }
+.sh-info-box-image{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #708090;
+}
+.sh-info-box-image img{
+    width: 100%;;
+}
 /* === PATIENTS INFORMATION === */
 .sh-patient-information-section{
     margin: 20px;
     width: 100%;
     padding-bottom: 20px;
     border-radius: 5px;
+    height: max-content;
     border-block-start: 1px solid #7080907a;
     border-inline-end: 1px solid #7080907a;
     border-inline-start: 1px solid #7080907a;
@@ -235,11 +246,18 @@ a{
     width: 100%;
     line-height: 2em;
 }
+.sh-info-box-day{
+    width: 50%;
+    font-size: 1.5rem;
+}
+.sh-info-box label{
+    font-size: 1.5rem;
+}
 .sh-patient-information-container input{
     width: 100%;
     border-radius: 3px;
     padding: 3px 6px;
-    font-size: 0.875rem;
+    font-size: 1rem;
     border: 1px solid #708090;
 }
 .sh-patient-information-container input:focus{
@@ -256,52 +274,9 @@ a{
     appearance: none;
     border: 1px solid #708090;
 }
-/* === PAYMENT METHODS === */
-.sh-payment-methods-section{
-    width: 40%;
-    border: 1px solid #7080907a;
-    height: max-content;
-    border-radius: 5px;
-    margin: 20px;
-}
-.sh-payment-container{
-    background: white;
-    padding: 10px;
-    line-height: 3em;
-    border-radius: 3px;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
-}
-.sh-payment-container button{
-    width: 100%;
-}
-.sh-payment-btn-style img{
-    width: 100%;
-    height: 50px;
-}
-.sh-payment-btn-style{
-    border: 1px solid #708090;
-    font-size: 1.5rem;
-    border-radius: 3px;
-}
-.sh-payment-btn-bg-cash{
-    transition: all 0.3s ease-in-out;
-    background: #2F4F4F;
-    color: #E2E8F0;
-}
-.sh-payment-btn-bg-cash:hover{
-    background: #37aeae;
-}
-.sh-payment-btn-bg-bkash{
-    background: white;
-    padding: 3px 5px;
-}
-.sh-nagad-bksh{
-    display: flex;
-    gap: 10px;
-}
 /* === SUBMIT BUTTON === */
 .sh-submit-btn{
-    width: 70%;
+    width: 100%;
     padding: 20px;
     display: flex;
     align-items: end;

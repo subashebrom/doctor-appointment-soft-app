@@ -35,7 +35,6 @@ a{
     position: sticky;
 }
 .sh-brand-logo-icons{
-    z-index: 999;
     height: 80px;
     display: flex;
     align-items: center;
@@ -45,7 +44,7 @@ a{
     top: 0;
     position: sticky;
     color: var(--btn-bg-color);
-    border-inline-end:1px solid #70809063 ;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
 .sh-left-side-menu-items-icons ul{
     width: 100%;
@@ -81,14 +80,12 @@ a{
 /* === BRAND LOGO === */
 .sh-brand-logo{
     height: 80px;
-    z-index: 999;
     color: var(--btn-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
     box-shadow:  3px 3px 5px rgb(0, 0, 0, 0.1);
-    border-inline-end:1px solid #70809063 ;
 }
 /* === MENU ITEMS === */
 .sh-left-side-menu-items ul{
@@ -199,133 +196,94 @@ a{
     border-radius: 50%;
     border: 1px solid #708090;
 }
-/* ==== PATIENT INFO AND PAYMENT METHODS ==== */
-.sh-patient-info-payment-methods-section{
+/* === PATIENTS SECTION === */
+.sh-patients-section{
     width: 100%;
-    display: flex;
+    height: 75vh;
+    padding: 20px;
 }
-/* === PATIENTS INFORMATION === */
-.sh-patient-information-section{
-    margin: 20px;
+.sh-patients-section table{
     width: 100%;
-    padding-bottom: 20px;
-    border-radius: 5px;
-    border-block-start: 1px solid #7080907a;
-    border-inline-end: 1px solid #7080907a;
-    border-inline-start: 1px solid #7080907a;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    border-collapse: collapse;
 }
-.patient-info-text{
-    height: 50px;
-    display: flex;
-    padding-left: 20px;
-    align-items: center;
+.sh-patients-section th, td{
+    border: 1px solid #70809063;
+    padding: 10px 15px;
     color: #708090;
-    border-block-end: 1px solid #7080907a;
 }
-.sh-patient-information-container{
+.sh-new-patients{
     width: 100%;
-    padding: 20px 20px 0 20px;
-    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
 }
-.sh-info-box{
-    width: 100%;
-    line-height: 2em;
+.sh-new-patients h1{
+    font-size: 1.5rem;
+    color: #708090;
 }
-.sh-patient-information-container input{
-    width: 100%;
-    border-radius: 3px;
-    padding: 3px 6px;
-    font-size: 0.875rem;
+.sh-new-patients h1::before{
+    position: absolute;
+    content: "";
+    background-color: #2F4F4F;
+    width: 150px;
+    height: 2px;
+    bottom: 0;
+}
+.sh-new-patients input{
+    width: 25%;
     border: 1px solid #708090;
-}
-.sh-patient-information-container input:focus{
-    outline: none;
-}
-.sh-patient-information-container select:focus{
-    outline: none;
-}
-.sh-patient-information-container select{
-    width: 100%;
-    font-size: 0.875rem;
-    border-radius: 3px;
-    padding: 3px 6px;
-    appearance: none;
-    border: 1px solid #708090;
-}
-/* === PAYMENT METHODS === */
-.sh-payment-methods-section{
-    width: 40%;
-    border: 1px solid #7080907a;
-    height: max-content;
     border-radius: 5px;
-    margin: 20px;
+    padding: 6px 12px;
+    font-size: var(--primary-size);
 }
-.sh-payment-container{
-    background: white;
-    padding: 10px;
-    line-height: 3em;
-    border-radius: 3px;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+.sh-patients-name{
+    width: 25%;
+    text-align: left;
 }
-.sh-payment-container button{
-    width: 100%;
+.sh-patients-address{
+    width: 15%;
+    text-align: left;
 }
-.sh-payment-btn-style img{
+.sh-text-center{
+    text-align: center;
+}
+.sh-action-btns{
+    text-align: center;
+}
+/* === PAGINATION === */
+.sh-pagination-section{
     width: 100%;
     height: 50px;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.sh-payment-btn-style{
-    border: 1px solid #708090;
-    font-size: 1.5rem;
+.sh-pagination-section p{
+    background: var(--btn-hover);
+    color: white;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border: none;
     border-radius: 3px;
 }
-.sh-payment-btn-bg-cash{
-    transition: all 0.3s ease-in-out;
-    background: #2F4F4F;
-    color: #E2E8F0;
-}
-.sh-payment-btn-bg-cash:hover{
-    background: #37aeae;
-}
-.sh-payment-btn-bg-bkash{
-    background: white;
-    padding: 3px 5px;
-}
-.sh-nagad-bksh{
-    display: flex;
-    gap: 10px;
-}
-/* === SUBMIT BUTTON === */
-.sh-submit-btn{
-    width: 70%;
-    padding: 20px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-}
-.sh-submit-btn button{
-    transition: all 0.3s ease-in-out;
-    font-size: 1.25rem;
-    font-weight: 600;
-    padding: 6px 12px;
+.sh-pagination-section button{
     background: var(--btn-bg-color);
-    color: #E2E8F0;    
-    border: 1px solid #708090;
-    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
 }
-.sh-submit-btn button:hover{
+.sh-pagination-section button:hover{
     background: var(--btn-hover);
 }
+/* === FOOTER === */
 .sh-footer-section{
-    bottom: 0;
-    position: fixed;
-    width: 100%;
     padding: 20px;
-    margin-top: 40px;
     text-align: center;
-    box-shadow: 3px 3px 3px 5px rgb(0, 0, 0, 0.1);
+    box-shadow: -3px -3px 5px rgb(0, 0, 0, 0.1);
 }
