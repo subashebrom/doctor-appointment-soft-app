@@ -34,7 +34,7 @@ a{
     top: 0;
     position: sticky;
 }
-.sh-brand-logo-icons{
+.sh-brand-logo-icons a{
     height: 80px;
     display: flex;
     align-items: center;
@@ -45,6 +45,7 @@ a{
     position: sticky;
     color: var(--btn-bg-color);
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    border-inline-end:1px solid #70809063;
 }
 .sh-left-side-menu-items-icons ul{
     width: 100%;
@@ -78,7 +79,7 @@ a{
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
 /* === BRAND LOGO === */
-.sh-brand-logo{
+.sh-brand-logo a{
     height: 80px;
     color: var(--btn-bg-color);
     display: flex;
@@ -86,6 +87,7 @@ a{
     justify-content: center;
     background: white;
     box-shadow:  3px 3px 5px rgb(0, 0, 0, 0.1);
+    border-inline-end:1px solid #70809063 ;
 }
 /* === MENU ITEMS === */
 .sh-left-side-menu-items ul{
@@ -140,7 +142,7 @@ a{
 .show-short-menu{
     display: none;
 }
-.appointment-btn{
+.appointment-btn a{
     transition: all 0.3s ease-in-out;
     background: var(--bg-color);
     border: 1px solid rgba(128, 128, 128, 0.397);
@@ -149,7 +151,7 @@ a{
     font-size: var(--primary-size);
     color: black;
 }
-.appointment-btn:hover{
+.appointment-btn a:hover{
     background: var(--btn-hover);
     color: white    ;
 }
