@@ -79,6 +79,7 @@ a{
     height: 100vh;
     background-color: var(--bg-color);
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    transition:  all 0.5s ease;
 }
 /* === BRAND LOGO === */
 .sh-brand-logo{
