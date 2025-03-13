@@ -1,30 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Hind Siliguri", sans-serif;
 }
-:root{
+
+:root {
     --bg-color: #f1f9ff;
     --btn-bg-color: #095d7e;
     --btn-hover: #0065c0;
-    --secondary-size: 1.20rem; /* 20px */
-    --primary-size: 1rem; /* 16px */
+    --secondary-size: 1.20rem;
+    /* 20px */
+    --primary-size: 1rem;
+    /* 16px */
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* ==== LEFT AND TOP ITEMS ==== */
-.sh-left-and-top-items-section{
+.sh-left-and-top-items-section {
     width: 100%;
     display: flex;
 }
+
 /* === JUST ICONS === */
-.sh-left-side-menu-container-icon{
+.sh-left-side-menu-container-icon {
     width: 60px;
     height: 100vh;
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
@@ -34,7 +42,8 @@ a{
     top: 0;
     position: sticky;
 }
-.sh-brand-logo-icons a{
+
+.sh-brand-logo-icons a {
     z-index: 999;
     height: 80px;
     display: flex;
@@ -45,15 +54,18 @@ a{
     top: 0;
     position: sticky;
     color: var(--btn-bg-color);
-    border-inline-end:1px solid #70809063 ;
+    border-inline-end: 1px solid #70809063;
 }
-.sh-left-side-menu-items-icons ul{
+
+.sh-left-side-menu-items-icons ul {
     width: 100%;
 }
-.sh-left-side-menu-items-icons li{
+
+.sh-left-side-menu-items-icons li {
     height: 50px;
 }
-.sh-left-side-menu-items-icons a{
+
+.sh-left-side-menu-items-icons a {
     height: 100%;
     width: 100%;
     transition: all 0.3s ease-in-out;
@@ -63,13 +75,15 @@ a{
     align-items: center;
     justify-content: center;
 }
-.sh-left-side-menu-items-icons a:hover{
+
+.sh-left-side-menu-items-icons a:hover {
     background: var(--btn-bg-color);
     color: white;
 }
+
 /* ================================ */
 /* === LEFT SIDE MENU ITEMS === */
-.sh-left-side-menu-container{
+.sh-left-side-menu-container {
     left: 0;
     top: 0;
     position: sticky;
@@ -78,8 +92,9 @@ a{
     background-color: var(--bg-color);
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
+
 /* === BRAND LOGO === */
-.sh-brand-logo a{
+.sh-brand-logo a {
     height: 80px;
     z-index: 999;
     color: var(--btn-bg-color);
@@ -87,17 +102,20 @@ a{
     align-items: center;
     justify-content: center;
     background: white;
-    box-shadow:  3px 3px 5px rgb(0, 0, 0, 0.1);
-    border-inline-end:1px solid #70809063 ;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    border-inline-end: 1px solid #70809063;
 }
+
 /* === MENU ITEMS === */
-.sh-left-side-menu-items ul{
+.sh-left-side-menu-items ul {
     width: 100%;
 }
-.sh-left-side-menu-items li{
+
+.sh-left-side-menu-items li {
     height: 50px;
 }
-.sh-left-side-menu-items a{
+
+.sh-left-side-menu-items a {
     height: 100%;
     width: 100%;
     padding: 0 30px;
@@ -107,19 +125,23 @@ a{
     display: flex;
     align-items: center;
 }
-.sh-left-side-menu-items a:hover{
+
+.sh-left-side-menu-items a:hover {
     background-color: var(--btn-hover);
     color: white;
 }
-.sh-left-side-menu-items i{
+
+.sh-left-side-menu-items i {
     margin-right: 5px;
 }
+
 /* === RIGHT ITEM DETAILS SECTION === */
-.sh-right-item-details-section{
+.sh-right-item-details-section {
     width: 100%;
 }
+
 /* === TOP NAV ITEMS === */
-.sh-doctor-nav-section{
+.sh-doctor-nav-section {
     width: 100%;
     height: 80px;
     padding: 0 20px;
@@ -131,19 +153,23 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+
 /* === DOCTOR NAV LEFT CONTAINER === */
-.sh-doctor-nav-left-container ul{
+.sh-doctor-nav-left-container ul {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.sh-menu-hover{
+
+.sh-menu-hover {
     color: black;
 }
-.show-short-menu{
+
+.show-short-menu {
     display: none;
 }
-.appointment-btn a{
+
+.appointment-btn a {
     transition: all 0.3s ease-in-out;
     background: var(--bg-color);
     border: 1px solid rgba(128, 128, 128, 0.397);
@@ -152,23 +178,27 @@ a{
     font-size: var(--primary-size);
     color: black;
 }
-.appointment-btn a:hover{
+
+.appointment-btn a:hover {
     background: var(--btn-hover);
-    color: white    ;
+    color: white;
 }
+
 /* === DOCTOR NAV RIGHT CONTAINER === */
-.sh-doctor-nav-right-container{
+.sh-doctor-nav-right-container {
     display: flex;
     align-items: center;
 }
+
 /* === NOTIFICATION ICON */
-.sh-notificatio-icon{
+.sh-notificatio-icon {
     position: relative;
     margin-right: 30px;
     color: #B22222;
     font-size: var(--secondary-size);
 }
-.sh-notificatio-icon i::after{
+
+.sh-notificatio-icon i::after {
     position: absolute;
     content: "10";
     text-align: center;
@@ -181,41 +211,67 @@ a{
     margin-left: -4px;
 
 }
+
 /* === DOCTOR PROFILE === */
-.sh-doctor-profile{
+.sh-doctor-profile {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.sh-doctor-name{
+
+.sh-doctor-name {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.sh-doctor-image img{
+
+.sh-doctor-image img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 1px solid #708090;
 }
+
 /* ==== PATIENT INFO AND PAYMENT METHODS ==== */
-.sh-patient-info-payment-methods-section{
+.sh-patient-info-payment-methods-section {
     width: 100%;
     display: flex;
 }
-.sh-info-box-image{
+
+.sh-info-box-image {
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #708090;
 }
-.sh-info-box-image img{
-    width: 100%;;
+
+.sh-info-box-image img {
+    width: 100%;
 }
+
+.sh-doc-image-second {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #708090;
+}
+
+.sh-doc-image-second img {
+    width: 100%;
+}
+
+
 /* === PATIENTS INFORMATION === */
-.sh-patient-information-section{
+.sh-doc-info-details-second {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sh-patient-information-section {
     margin: 20px;
     width: 100%;
     padding-bottom: 20px;
@@ -226,7 +282,8 @@ a{
     border-inline-start: 1px solid #7080907a;
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
-.patient-info-text{
+
+.patient-info-text {
     height: 50px;
     display: flex;
     padding-left: 20px;
@@ -234,7 +291,8 @@ a{
     color: #708090;
     border-block-end: 1px solid #7080907a;
 }
-.sh-patient-information-container{
+
+.sh-patient-information-container {
     width: 100%;
     padding: 20px 20px 0 20px;
     gap: 20px;
@@ -242,60 +300,71 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-.sh-info-box{
+
+.sh-info-box {
     width: 100%;
     line-height: 2em;
 }
-.sh-info-box-day{
+
+.sh-info-box-day {
     width: 50%;
     font-size: 1.5rem;
 }
-.sh-info-box label{
+
+.sh-info-box label {
     font-size: 1.5rem;
 }
-.sh-patient-information-container input{
+
+.sh-patient-information-container input {
     width: 100%;
     border-radius: 3px;
     padding: 3px 6px;
     font-size: 1rem;
     border: 1px solid #708090;
 }
-.sh-patient-information-container input:focus{
+
+.sh-patient-information-container input:focus {
     outline: none;
 }
-.sh-patient-information-container select:focus{
+
+.sh-patient-information-container select:focus {
     outline: none;
 }
-.sh-patient-information-container select{
+
+.sh-patient-information-container select {
     width: 100%;
     font-size: 0.875rem;
     border-radius: 3px;
-    padding: 3px 6px;
+    padding: 4.4px 6px;
     appearance: none;
     border: 1px solid #708090;
 }
+
 /* === SUBMIT BUTTON === */
-.sh-submit-btn{
+.sh-submit-btn {
     width: 100%;
     padding: 20px;
     display: flex;
     align-items: end;
     justify-content: end;
 }
-.sh-submit-btn button{
+
+.sh-submit-btn button {
     transition: all 0.3s ease-in-out;
     font-size: 1.25rem;
     font-weight: 600;
     padding: 6px 12px;
     background: var(--btn-bg-color);
-    color: #E2E8F0;    
+    color: #E2E8F0;
     border: 1px solid #708090;
     border-radius: 5px;
 }
-.sh-submit-btn button:hover{
+
+.sh-submit-btn button:hover {
     background: var(--btn-hover);
 }
-.sh-footer-section{
+
+.sh-footer-section {
     bottom: 0;
     position: fixed;
     width: 100%;
