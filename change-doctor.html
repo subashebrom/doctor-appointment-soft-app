@@ -171,7 +171,7 @@
                             <label for="text">হাসপাতালের নাম</label>
                             <select name="" id="">
                                 <!-- === Name of the hospital in Rangpur district of Rangpur division === -->
-                                <option value="country" name="country">জেলা</option>
+                                <option value="country" name="country">এখানে হাসপাতালের নাম লিখুন</option>
                                 <option value="1" name="country">রংপুর মেডিকেল কলেজ ও হাসপাতাল</option>
                                 <option value="2" name="country">গুড হেলথ হাসপাতাল</option>
                                 <option value="3" name="country">ডক্টরস কমিউনিটি হাসপাতাল (প্রা.) লিমিটেড</option>
@@ -740,27 +740,47 @@
                                 <option value="64" name="country">ওয়ান</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="sh-patient-information-container">
                         <!-- ==== DIVISION ==== -->
                         <div class="sh-info-box">
-                            <label for="text">ডাক্তারের নাম </label>
+                            <label for="text">বিশেষজ্ঞ</label>
                             <select name="" id="">
-                                <option value="country" name="country">বিভাগ</option>
-                                <option value="1" name="country">রংপুর</option>
-                                <option value="2" name="country">রাজশাহী</option>
-                                <option value="3" name="country">সিলেট</option>
-                                <option value="4" name="country">খুলনা</option>
-                                <option value="5" name="country">ঢাকা</option>
-                                <option value="6" name="country">ময়মনসিংহ</option>
-                                <option value="7" name="country">চট্টগ্রাম</option>
-                                <option value="7" name="country">বরিশাল</option>
+                                <option value="country" name="country">বিশেষজ্ঞ</option>
                             </select>
+                        </div>
+                        <!-- ==== DOCTORS NAME ==== -->
+                        <div class="sh-info-box">
+                            <label for="text">ডাক্তারের নাম </label>
+                            <input type="text" placeholder="এখানে ডাক্তারের নাম লিখুন">
+                        </div>
+                        <!-- ==== DISTRICT ==== -->
+                        <div class="sh-info-box">
                         </div>
 
                     </div>
+                    <!-- === FIND BUTTON === -->
+                    <div onclick="doctorProfile()" class="sh-find-btn"><button type="button" name="button">খুঁজুন</button></div>
                 </div>
             </div>
             <!-- === SUBMIT BUTTON === -->
             <div class="sh-submit-btn"><button type="submit" name="submit">সংরক্ষণ করুন</button></div>
+            <!-- === DOCTOR PROFILE SHOWING === -->
+            <div class="sh-show-doctor-profile-section">
+                <div class="sh-doctor-profile-showing-cart">
+                    <div class="sh-showing-image"><img src="img/doctor_2785482.png" alt=""></div>
+                    <div class="sh-showing-details">
+                        <h3>রিউম্যাটোলজি ও মেডিসিন বিশেষজ্ঞ </h3>
+                        <h1>ডাঃ মোঃ সাদিকুল ইসলাম সাদিক </h1>
+                        <p>এমবিবিএস, বিসিএস (স্বাস্থ্য)</p>
+                        <p>এমডি (রিউম্যাটোলজি), পিজি হাসপাতাল, ঢাকা</p>
+                        <p>এফএসিআর (আমেরিকা)</p>
+                        <p>ইসিআরডি (সুইজারল্যান্ড)</p>
+                        <p>বাত-ব্যথা, কোমর ব্যথা, হাড়ক্ষয়, বাতরোগ ও মেডিসিন বিশেষজ্ঞ </p>
+                        <p>রংপুর মেডিকেল কলেজ ও হাসপাতল</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

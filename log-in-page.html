@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="css/log-in-page.css">
+    <title>Sign Up Page</title>
+</head>
+
+<body>
+    <!-- === DOCTOR SIGN UP PAGE === -->
+    <div class="sh-doctor-sign-up-container">
+        <div class="sh-account-text">
+            <p>অ্যাকাউন্ট তৈরি করুন</p>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">নাম</label>
+                <input type="text" placeholder="এখানে আপনার নাম লিখুন">
+            </div>
+            <div class="sh-sign-up-details">
+                <label for="text">বিশেষজ্ঞ/অভিজ্ঞতা</label>
+                <select name="" id="">
+                    <option value="" name=""></option>
+                    <option value="" name=""></option>
+                    <option value="" name=""></option>
+                    <option value="" name=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">ডিগ্রি</label>
+                <select name="" id="">
+                    <option value="" name=""></option>
+                    <option value="" name=""></option>
+                    <option value="" name=""></option>
+                </select>
+            </div>
+            <div class="sh-sign-up-details">
+                <label for="text">বিভাগ</label>
+                <select name="" id="">
+                    <option value="country" name="country">বিভাগ</option>
+                    <option value="1" name="country">রংপুর</option>
+                    <option value="2" name="country">রাজশাহী</option>
+                    <option value="3" name="country">সিলেট</option>
+                    <option value="4" name="country">খুলনা</option>
+                    <option value="5" name="country">ঢাকা</option>
+                    <option value="6" name="country">ময়মনসিংহ</option>
+                    <option value="7" name="country">চট্টগ্রাম</option>
+                    <option value="7" name="country">বরিশাল</option>
+                </select>
+            </div>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">জেলা</label>
+                <select name="" id="">
+                    <option value="" name="">জেলা</option>
+                    <option value="" name=""></option>
+                    <option value="" name=""></option>
+                </select>
+            </div>
+            <div class="sh-sign-up-details">
+                <label for="text">হাসপাতালের নাম</label>
+                <select name="" id="">
+                    <option value="country" name="country">হাসপাতালের নাম</option>
+                    <option value="1" name="country">রংপুর</option>
+                    <option value="2" name="country">রাজশাহী</option>
+                    <option value="3" name="country">সিলেট</option>
+                    <option value="4" name="country">খুলনা</option>
+                    <option value="5" name="country">ঢাকা</option>
+                    <option value="6" name="country">ময়মনসিংহ</option>
+                    <option value="7" name="country">চট্টগ্রাম</option>
+                    <option value="7" name="country">বরিশাল</option>
+                </select>
+            </div>
+        </div>
+        <!-- === SIGN UP BUTTON === -->
+        <div class="sh-sign-up-btn"><button>সাইন আপ করুন</button></div>
+    </div>
+    <!-- === PATIENT SIGN UP PAGE === -->
+    <div class="sh-patients-sign-up-container">
+        <div class="sh-account-text">
+            <p>অ্যাকাউন্ট তৈরি করুন</p>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">নাম</label>
+                <input type="text" placeholder="এখানে আপনার নাম লিখুন">
+            </div>
+            <div class="sh-sign-up-details">
+                <label for="text">বয়স </label>
+                <input type="number" placeholder="বয়স ">
+            </div>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">লিঙ্গ</label>
+                <select name="" id="">
+                    <option value="" name="">পুরুষ</option>
+                    <option value="" name="">মহিলা</option>
+                </select>
+            </div>
+            <div class="sh-sign-up-details">
+                <label for="text">যোগযোগ নম্বর</label>
+                <input type="number" placeholder="+880 1000000000">
+            </div>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">জিমেইল</label>
+                <input type="email" placeholder="@gmail.com">
+            </div>
+            <div class="sh-sign-up-details">
+                <label for="text">ঠিকানা</label>
+                <input type="text" placeholder="ঠিকানা">
+            </div>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">পাসওয়ার্ড</label>
+                <input type="password" placeholder="পাসওয়ার্ড">
+            </div>
+            <div class="sh-sign-up-details">
+                <label for="text">পাসওয়ার্ড নিশ্চিত করুন</label>
+                <input type="password" placeholder="পাসওয়ার্ড নিশ্চিত করুন">
+            </div>
+        </div>
+        <!-- === SIGN UP BUTTON === -->
+        <div class="sh-sign-up-btn"><button>সাইন আপ করুন</button></div>
+        <div onclick="haveAccount()" class="sh-allready-account"><button>আমার একটি অ্যাকাউন্ট আছে</button></div>
+    </div>
+    <!-- === PATIENT LOG IN PAGE === -->
+    <div class="sh-patients-log-in-container">
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">নাম/ফোন নম্বর অথবা জিমেইল</label>
+                <input type="text" placeholder="নাম/ফোন নম্বর অথবা জিমেইল">
+            </div>
+        </div>
+        <div class="sh-sign-up-box">
+            <div class="sh-sign-up-details">
+                <label for="text">পাসওয়ার্ড</label>
+                <input type="password" placeholder="পাসওয়ার্ড">
+            </div>
+        </div>
+        <!-- === SIGN UP BUTTON === -->
+        <div class="sh-sign-up-btn"><button>লগ ইন করুন</button></div>
+        <div onclick="newAccount()" class="sh-new-btn"><button>নতুন অ্যাকাউন্ট তৈরি করুন</button></div>
+    </div>
+    <!-- ==== js link === -->
+    <script src="js/log-in-page.js"></script>
+</body>
+
+</html>
