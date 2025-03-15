@@ -302,6 +302,9 @@ a{
     padding: 6px 12px;
     font-size: var(--primary-size);
 }
+.sh-new-patients input:focus{
+    outline: none;
+}
 .sh-patients-name{
     width: 25%;
     text-align: left;

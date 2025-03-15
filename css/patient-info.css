@@ -325,7 +325,6 @@ a{
 }
 .sh-footer-section{
     bottom: 0;
-    position: fixed;
     width: 100%;
     padding: 20px;
     margin-top: 40px;
