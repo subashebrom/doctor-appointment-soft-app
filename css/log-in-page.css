@@ -35,9 +35,9 @@ body{
 }
 .sh-account-text{
     display: flex;
-    padding: 10px;
+    padding: 5px;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     align-items: center;
     margin-bottom: 20px;
     border-radius: 100px;
@@ -45,7 +45,7 @@ body{
     justify-content: center;
 }
 .sh-doctor-sign-up-container{
-    display: none;
+    display: block;
     width: 50%;
     padding: 20px;
     line-height: 3em;
@@ -54,7 +54,7 @@ body{
     border: 1px solid #7080907a;
 }
 .sh-patients-sign-up-container{
-    display: block;
+    display: none;
     width: 50%;
     padding: 20px;
     line-height: 3em;
