@@ -364,4 +364,7 @@ a{
     .sh-submit-btn{
         width: 100%;
     }
+    .sh-menu-hover, .show-short-menu{
+        display: none;
+    }
 }

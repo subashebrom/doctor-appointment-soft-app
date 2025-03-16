@@ -375,4 +375,7 @@ a {
     .sh-doctor-nav-section{
         padding: 10px;
     }
+    .sh-menu-hover, .show-short-menu{
+        display: none;
+    }
 }

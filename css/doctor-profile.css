@@ -394,3 +394,42 @@ a {
     text-align: center;
     box-shadow: 3px 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
+/* ==== MOBILE RESPONSIVE ==== */
+@media(max-width: 768px){
+    .sh-doctor-nav-section{
+        padding: 10px;
+    }
+    .sh-patient-information-section{
+        margin: 10px;
+    }
+    .sh-patient-information-container{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-block-end: 1px solid #7080907a;
+    }
+    .sh-info-box{
+        width: 100%;
+    }
+    .sh-info-box input{
+        width: 100%;
+    }
+    .sh-this-container-for-mobile{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sh-info-box-day{
+        width: 100%;
+    }
+    .patient-info-text{
+        padding: 10px;
+    }
+    .sh-menu-hover, .show-short-menu{
+        display: none;
+    }
+}

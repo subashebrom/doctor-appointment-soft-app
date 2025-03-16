@@ -398,4 +398,7 @@ td {
         padding: 10px;
         position: static;
     }
+    .sh-menu-hover, .show-short-menu{
+        display: none;
+    }
 }

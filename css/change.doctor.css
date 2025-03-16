@@ -41,6 +41,7 @@ a {
     background-color: var(--bg-color);
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
+
 /* .sh-side-menu-only-icons{
     left: 0;
     top: 0;
@@ -289,15 +290,17 @@ a {
     appearance: none;
     border: 1px solid #708090;
 }
+
 /* === FIND BUTTON === */
-.sh-find-btn{
+.sh-find-btn {
     width: 100%;
     padding-right: 20px;
     display: flex;
     align-items: end;
     justify-content: end;
 }
-.sh-find-btn button{
+
+.sh-find-btn button {
     border: none;
     color: white;
     cursor: pointer;
@@ -307,9 +310,11 @@ a {
     background: var(--btn-bg-color);
     transition: all 0.3s ease-in-out;
 }
-.sh-find-btn button:hover{
+
+.sh-find-btn button:hover {
     background: var(--btn-hover);
 }
+
 /* === SUBMIT BUTTON === */
 .sh-submit-btn {
     width: 100%;
@@ -333,21 +338,24 @@ a {
 .sh-submit-btn button:hover {
     background: var(--btn-hover);
 }
+
 /* === DOCTOR PROFILE SHOWING === */
-.sh-show-doctor-profile-section{
+.sh-show-doctor-profile-section {
     width: 100%;
     margin-bottom: 40px;
     display: none;
     align-items: center;
     justify-content: center;
 }
-.sh-showing-image img{
+
+.sh-showing-image img {
     width: 180px;
     border-radius: 50%;
     border: 1px solid #708090;
-    background:  white;
+    background: white;
 }
-.sh-doctor-profile-showing-cart{
+
+.sh-doctor-profile-showing-cart {
     padding: 20px;
     border-radius: 5px;
     line-height: 2em;
@@ -356,10 +364,12 @@ a {
     border: 1px solid #7080907a;
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
-.sh-showing-details p{
+
+.sh-showing-details p {
     font-size: 1.25rem;
 }
-.sh-showing-details h1{
+
+.sh-showing-details h1 {
     font-size: 1.50rem;
 }
 
@@ -371,4 +381,35 @@ a {
     margin-top: 40px;
     text-align: center;
     box-shadow: 3px 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+/* ===== MOBILE RESPONSIVE ===== */
+@media(max-width: 768px) {
+
+    .sh-left-side-menu-container-icon,
+    .sh-left-side-menu-container {
+        display: none;
+    }
+    .sh-doctor-nav-section{
+        padding: 10px;
+    }
+    .sh-patient-information-container{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .patient-info-text{
+        padding: 10px;
+    }
+    .sh-patient-information-section{
+        margin: 10px;
+    }
+    .sh-find-btn{
+        padding: 10px;
+    }
+    .sh-submit-btn{
+        padding: 10px;
+    }
+    .sh-menu-hover, .show-short-menu{
+        display: none;
+    }
 }

@@ -463,4 +463,7 @@ td {
     .sh-footer-section{
         display: none;
     }
+    .sh-menu-hover, .show-short-menu{
+        display: none;
+    }
 }
