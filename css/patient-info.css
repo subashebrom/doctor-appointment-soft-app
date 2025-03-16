@@ -368,3 +368,41 @@ a{
         display: none;
     }
 }
+
+/* ==================== */
+.sh-mobile-navbar{
+    display: none;
+}
+/* === MOBILE RESPONSIVE === */
+@media(max-width: 768px){
+    .sh-left-and-top-items-section{
+        margin-bottom: 70px;
+    }
+    .sh-mobile-navbar{
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+    .sh-mobile-navbar ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sh-mobile-navbar li{
+        height: 50px;
+        width: 100%;
+        background: var(--bg-color);
+    }
+    .sh-mobile-navbar a{
+        height: 100%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        color: var(--btn-bg-color);
+    }
+}
