@@ -406,3 +406,81 @@ a{
         color: var(--btn-bg-color);
     }
 }
+/* === PDF FILE === */
+.sh-pdf-section{
+    width: 100%;
+    justify-items: center;
+}
+.sh-pdf-details{
+    width: 70%;
+    justify-items: center;
+    border: 1px solid #7080907a;
+}
+.sh-pdf-doc-container{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-block-end: 1px solid #7080907a;
+}
+.sh-pdf-patient-info{
+    width: 100%;
+    padding: 20px;
+}
+.sh-pdf-patient-info-box{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #f2f3f4;
+    border-block-end: 1px solid #7080907a;
+}
+.sh-pdf{
+    width: 100%;
+    text-align-last: left;
+}
+.sh-pdf-download{
+    width: 70%;
+    margin-top: 20px;
+    text-align: end;
+}
+.sh-pdf-download i{
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 5px;
+    background: var(--btn-bg-color);
+}
+/* === MOBILE RESPONSIVE === */
+@media(max-width: 768px){
+    .sh-pdf-section{
+        width: 100%;
+        padding: 10px;
+    }
+    .sh-pdf-details{
+        width: 100%;
+    }
+    .sh-pdf-patient-info-box{
+        display: flex;
+        flex-direction: column;
+        background: none;
+        border-block-end: none;
+        gap: 20px;
+    }
+    .sh-pdf-patient-info{
+        padding: 0;
+    }
+    .sh-pdf{
+        display: flex;
+        border-block-end: 1px solid #7080907a;
+    }
+    .sh-pdf label{
+        width: 100%;
+    }
+    .sh-pdf p{
+        width: 100%;
+    }
+    .sh-pdf-download{
+        width: 100%;
+        padding: 10px;
+    }
+}
