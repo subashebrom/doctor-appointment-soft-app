@@ -258,7 +258,6 @@ a {
 
 .sh-info-box-image img {
     width: 100%;
-    ;
 }
 
 /* ==== DOCTOR INFO ==== */
@@ -298,13 +297,27 @@ a {
     align-items: center;
     justify-content: space-between;
 }
+.sh-this-container-for-mobile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .sh-info-box {
+    width: 50%;
+    line-height: 2em;
+}
+.sh-info-add {
     width: 100%;
     line-height: 2em;
 }
+.sh-info-add label{
+    font-size: 1.5rem;
+}
 
 .sh-info-box-day {
+    display: grid;
     width: 50%;
     font-size: 1.5rem;
 }
@@ -359,5 +372,7 @@ a {
     .sh-patient-information-section{
         margin: 10px;
     }
-
+    .sh-doctor-nav-section{
+        padding: 10px;
+    }
 }
