@@ -302,13 +302,40 @@ a {
     border: 1px solid #708090;
 }
 
+.sh-payment-contact-section {
+    width: 40%;
+    margin: 20px;
+}
+
+.sh-messenger-bg {
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    background: #0099FF;
+    border-block-end: 2px solid white;
+}
+
+.sh-live-contact {
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    background-color: #079992;
+}
+
+.sh-whatsapp-bg {
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    background: #25D366;
+}
+
 /* === PAYMENT METHODS === */
 .sh-payment-methods-section {
-    width: 40%;
-    border: 1px solid #7080907a;
-    height: max-content;
+    width: 100%;
     border-radius: 5px;
-    margin: 20px;
+    margin-bottom: 10px;
+    height: max-content;
+    border: 1px solid #7080907a;
 }
 
 .sh-payment-container {
@@ -439,6 +466,12 @@ a {
     background: var(--btn-bg-color);
 }
 
+
+/* ==================== */
+.sh-mobile-navbar {
+    display: none;
+}
+
 /* === MOBILE RESPONSIVE === */
 @media(max-width: 768px) {
 
@@ -484,15 +517,10 @@ a {
     .show-short-menu {
         display: none;
     }
-}
-
-/* ==================== */
-.sh-mobile-navbar {
-    display: none;
-}
-
-/* === MOBILE RESPONSIVE === */
-@media(max-width: 768px) {
+    .sh-payment-contact-section{
+        width: 100%;
+        margin: 0;
+    }
     .sh-left-and-top-items-section {
         margin-bottom: 70px;
     }
@@ -562,6 +590,7 @@ a {
     .sh-pdf p {
         width: 100%;
     }
+
     .sh-pdf-download {
         width: 100%;
         padding: 10px;
