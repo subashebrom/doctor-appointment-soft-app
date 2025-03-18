@@ -148,16 +148,19 @@ a {
 
 /* === TOP NAV ITEMS === */
 .sh-doctor-nav-section {
+    top: 0;
     width: 100%;
     height: 80px;
     padding: 0 20px;
+    position: sticky;
     background: white;
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
-    top: 0;
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.sh-doctor-nav-section:hover .sh-doctor-hover-profile{
+    right: 0;
 }
 
 /* === DOCTOR NAV LEFT CONTAINER === */
@@ -193,6 +196,8 @@ a {
 /* === DOCTOR NAV RIGHT CONTAINER === */
 .sh-doctor-nav-right-container {
     display: flex;
+    cursor: pointer;
+    position: relative;
     align-items: center;
 }
 
@@ -239,6 +244,35 @@ a {
     border: 1px solid #708090;
 }
 
+/* === DOCTOR POFILE HOVER === */
+.sh-doctor-hover-profile{
+    top: 80px;
+    z-index: 9999;
+    right: -99999999px;
+    position: absolute;
+    justify-items: end;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.sh-doc-cart-container{
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background: white;
+    border: 1px solid #70809063;
+}
+.sh-doc-hover-image{
+    text-align: center;
+}
+.sh-doc-hover-image img{
+    width: 40%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.sh-doc-cart-container a{
+    color: black;
+}
 /*  === FILLTER === */
 .sh-fillter {
     width: 100%;
@@ -394,15 +428,17 @@ td {
 .sh-delete-btn {
     color: #b22222b1;
 }
+
 /* === PAGINATION === */
-.sh-pagination{
+.sh-pagination {
     margin-top: 100px;
     gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sh-pagination-two{
+
+.sh-pagination-two {
     margin-top: 50px;
     margin-bottom: 50px;
     gap: 10px;
@@ -410,7 +446,8 @@ td {
     align-items: center;
     justify-content: center;
 }
-.sh-pagination-previous{
+
+.sh-pagination-previous {
     width: 10%;
     border: none;
     color: white;
@@ -419,10 +456,12 @@ td {
     font-size: 1rem;
     background: var(--btn-hover);
 }
-.sh-pagination-previous:hover{
+
+.sh-pagination-previous:hover {
     background: rgb(28, 98, 160);
 }
-.sh-pagination-next{
+
+.sh-pagination-next {
     width: 10%;
     border: none;
     color: white;
@@ -431,17 +470,21 @@ td {
     font-size: 1rem;
     background: var(--btn-hover);
 }
-.sh-pagination-next:hover{
+
+.sh-pagination-next:hover {
     background: rgb(28, 98, 160);
 }
-.sh-pagination p{
+
+.sh-pagination p {
     font-size: 1rem;
     font-weight: bolder;
 }
-.sh-pagination-two p{
+
+.sh-pagination-two p {
     font-size: 1rem;
     font-weight: bolder;
 }
+
 /* ==================== */
 .sh-mobile-navbar {
     display: none;
@@ -496,13 +539,16 @@ td {
         overflow-x: scroll;
         overflow-y: hidden;
     }
-    .sh-new-patients{
+
+    .sh-new-patients {
         padding: 10px;
         margin-top: 5px;
     }
+
     .sh-new-patients input {
         width: 50%;
     }
+
     .sh-patients-name {
         min-width: 300px;
     }
@@ -526,7 +572,8 @@ td {
     .sh-inspection {
         min-inline-size: 150px;
     }
-    .sh-pagination{
+
+    .sh-pagination {
         margin-top: 20px;
         margin-bottom: 10px;
         gap: 10px;
@@ -534,14 +581,17 @@ td {
         align-items: center;
         justify-content: center;
     }
-    .sh-pagination-two{
+
+    .sh-pagination-two {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .sh-pagination-previous{
+
+    .sh-pagination-previous {
         width: 30%;
     }
-    .sh-pagination-next{
+
+    .sh-pagination-next {
         width: 30%;
     }
 
