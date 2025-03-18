@@ -147,7 +147,6 @@ a {
     background: white;
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
     top: 0;
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -235,7 +234,7 @@ a {
 /* === PATIENTS SECTION === */
 .sh-patients-section {
     width: 100%;
-    height: 75vh;
+    height: 60vh;
     padding: 20px;
 }
 
@@ -253,6 +252,9 @@ td {
 
 .sh-new-patients {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -301,36 +303,59 @@ td {
 }
 
 /* === PAGINATION === */
-.sh-pagination-section {
-    width: 100%;
-    height: 50px;
+.sh-pagination {
+    margin-top: 100px;
     gap: 10px;
-    transition: all 0.3s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sh-pagination-section p {
-    background: var(--btn-hover);
-    color: white;
-    font-size: 1rem;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 3px;
+.sh-pagination-two {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.sh-pagination-section button {
-    background: var(--btn-bg-color);
-    color: white;
-    font-size: 1rem;
-    padding: 6px 12px;
+.sh-pagination-previous {
+    width: 10%;
     border: none;
-    border-radius: 3px;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: var(--btn-hover);
 }
 
-.sh-pagination-section button:hover {
+.sh-pagination-previous:hover {
+    background: rgb(28, 98, 160);
+}
+
+.sh-pagination-next {
+    width: 10%;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
     background: var(--btn-hover);
+}
+
+.sh-pagination-next:hover {
+    background: rgb(28, 98, 160);
+}
+
+.sh-pagination p {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.sh-pagination-two p {
+    font-size: 1rem;
+    font-weight: bolder;
 }
 
 /* === FOOTER === */
@@ -359,7 +384,7 @@ td {
     .sh-patients-section {
         padding: 10px;
         width: 100%;
-        height: 90vh;
+        height: 78vh;
         overflow: scroll;
     }
 
@@ -391,11 +416,12 @@ td {
         display: none;
     }
 
-    .sh-pagination-section {
+    .sh-new-patients {
         padding: 10px;
-        display: flex;
-        align-items: end;
-        justify-content: end;
+    }
+
+    .sh-new-patients input {
+        width: 50%;
     }
 
     .sh-doctor-nav-section {
@@ -410,6 +436,28 @@ td {
 
     .sh-left-and-top-items-section {
         margin-bottom: 70px;
+    }
+
+    .sh-pagination {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sh-pagination-two {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sh-pagination-previous {
+        width: 30%;
+    }
+
+    .sh-pagination-next {
+        width: 30%;
     }
 
     .sh-mobile-navbar {

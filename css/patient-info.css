@@ -303,12 +303,35 @@ a {
 }
 
 /* === PAYMENT METHODS === */
-.sh-payment-methods-section {
+.sh-payment-contact-section {
     width: 40%;
+    margin: 20px;
+}
+.sh-messenger-bg{
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    background: #0099FF;
+    border-block-end: 2px solid white;
+}
+.sh-live-contact{
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    background-color: #079992;
+}
+.sh-whatsapp-bg{
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    background: #25D366;
+}
+.sh-payment-methods-section {
+    width: 100%;
+    margin-bottom: 20px;
     border: 1px solid #7080907a;
     height: max-content;
     border-radius: 5px;
-    margin: 20px;
 }
 
 .sh-payment-container {
@@ -453,7 +476,10 @@ a {
         display: flex;
         flex-direction: column;
     }
-
+    .sh-payment-contact-section{
+        width: 100%;
+        margin: 0;
+    }
     .sh-payment-methods-section {
         width: 100%;
     }
