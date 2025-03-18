@@ -382,48 +382,56 @@ a {
     text-align: center;
     box-shadow: 3px 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
-/* ===== MOBILE RESPONSIVE ===== */
+
+/* ==================== */
+.sh-mobile-navbar {
+    display: none;
+}
+
+/* === MOBILE RESPONSIVE === */
 @media(max-width: 768px) {
 
     .sh-left-side-menu-container-icon,
     .sh-left-side-menu-container {
         display: none;
     }
-    .sh-doctor-nav-section{
+
+    .sh-doctor-nav-section {
         padding: 10px;
     }
-    .sh-patient-information-container{
+
+    .sh-patient-information-container {
         padding: 10px;
         display: flex;
         flex-direction: column;
     }
-    .patient-info-text{
+
+    .patient-info-text {
         padding: 10px;
     }
-    .sh-patient-information-section{
+
+    .sh-patient-information-section {
         margin: 10px;
     }
-    .sh-find-btn{
+
+    .sh-find-btn {
         padding: 10px;
     }
-    .sh-submit-btn{
+
+    .sh-submit-btn {
         padding: 10px;
     }
-    .sh-menu-hover, .show-short-menu{
+
+    .sh-menu-hover,
+    .show-short-menu {
         display: none;
     }
-}
 
-/* ==================== */
-.sh-mobile-navbar{
-    display: none;
-}
-/* === MOBILE RESPONSIVE === */
-@media(max-width: 768px){
-    .sh-left-and-top-items-section{
+    .sh-left-and-top-items-section {
         margin-bottom: 70px;
     }
-    .sh-mobile-navbar{
+
+    .sh-mobile-navbar {
         bottom: 0;
         width: 100%;
         position: fixed;
@@ -432,18 +440,21 @@ a {
         justify-content: center;
         z-index: 9999;
     }
-    .sh-mobile-navbar ul{
+
+    .sh-mobile-navbar ul {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .sh-mobile-navbar li{
+
+    .sh-mobile-navbar li {
         height: 50px;
         width: 100%;
         background: var(--bg-color);
     }
-    .sh-mobile-navbar a{
+
+    .sh-mobile-navbar a {
         height: 100%;
         padding: 0px 20px;
         display: flex;

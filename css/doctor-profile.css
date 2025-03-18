@@ -135,13 +135,6 @@ a {
     margin-right: 5px;
 }
 
-/* ===== MOBILE RESPONSIVE ===== */
-@media(max-width: 768px) {
-    .sh-left-side-menu-container-icon,
-    .sh-left-side-menu-container {
-        display: none;
-    }
-}
 /* === RIGHT ITEM DETAILS SECTION === */
 .sh-right-item-details-section {
     width: 100%;
@@ -307,22 +300,26 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-.sh-this-container-for-mobile{
+
+.sh-this-container-for-mobile {
     width: 100%;
     gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .sh-info-box {
     width: 50%;
     line-height: 2em;
 }
+
 .sh-info-add {
     width: 100%;
     line-height: 2em;
 }
-.sh-info-add label{
+
+.sh-info-add label {
     font-size: 1.5rem;
 }
 
@@ -394,15 +391,29 @@ a {
     text-align: center;
     box-shadow: 3px 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
-/* ==== MOBILE RESPONSIVE ==== */
-@media(max-width: 768px){
-    .sh-doctor-nav-section{
+
+/* ==================== */
+.sh-mobile-navbar {
+    display: none;
+}
+
+/* === MOBILE RESPONSIVE === */
+@media(max-width: 768px) {
+
+    .sh-left-side-menu-container-icon,
+    .sh-left-side-menu-container {
+        display: none;
+    }
+
+    .sh-doctor-nav-section {
         padding: 10px;
     }
-    .sh-patient-information-section{
+
+    .sh-patient-information-section {
         margin: 10px;
     }
-    .sh-patient-information-container{
+
+    .sh-patient-information-container {
         width: 100%;
         padding: 10px;
         display: flex;
@@ -411,39 +422,40 @@ a {
         justify-content: space-between;
         border-block-end: 1px solid #7080907a;
     }
-    .sh-info-box{
+
+    .sh-info-box {
         width: 100%;
     }
-    .sh-info-box input{
+
+    .sh-info-box input {
         width: 100%;
     }
-    .sh-this-container-for-mobile{
+
+    .sh-this-container-for-mobile {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .sh-info-box-day{
+
+    .sh-info-box-day {
         width: 100%;
     }
-    .patient-info-text{
+
+    .patient-info-text {
         padding: 10px;
     }
-    .sh-menu-hover, .show-short-menu{
+
+    .sh-menu-hover,
+    .show-short-menu {
         display: none;
     }
-}
 
-/* ==================== */
-.sh-mobile-navbar{
-    display: none;
-}
-/* === MOBILE RESPONSIVE === */
-@media(max-width: 768px){
-    .sh-left-and-top-items-section{
+    .sh-left-and-top-items-section {
         margin-bottom: 70px;
     }
-    .sh-mobile-navbar{
+
+    .sh-mobile-navbar {
         bottom: 0;
         width: 100%;
         position: fixed;
@@ -452,18 +464,21 @@ a {
         justify-content: center;
         z-index: 9999;
     }
-    .sh-mobile-navbar ul{
+
+    .sh-mobile-navbar ul {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .sh-mobile-navbar li{
+
+    .sh-mobile-navbar li {
         height: 50px;
         width: 100%;
         background: var(--bg-color);
     }
-    .sh-mobile-navbar a{
+
+    .sh-mobile-navbar a {
         height: 100%;
         padding: 0px 20px;
         display: flex;
