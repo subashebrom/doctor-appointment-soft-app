@@ -236,6 +236,7 @@ a {
     width: 100%;
     height: 60vh;
     padding: 20px;
+    overflow: auto;
 }
 
 .sh-patients-section table {
@@ -356,16 +357,6 @@ td {
 .sh-pagination-two p {
     font-size: 1rem;
     font-weight: bolder;
-}
-
-/* === FOOTER === */
-.sh-footer-section {
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    margin-top: 40px;
-    text-align: center;
-    box-shadow: 3px 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
 
 /* ==================== */
