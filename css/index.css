@@ -159,10 +159,6 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-.sh-doctor-nav-section:hover .sh-doctor-hover-profile{
-    right: 0;
-    display: block;
-}
 
 /* === DOCTOR NAV LEFT CONTAINER === */
 .sh-doctor-nav-left-container ul {
@@ -246,7 +242,7 @@ a {
 }
 
 /* === DOCTOR POFILE HOVER === */
-.sh-doctor-hover-profile{
+.sh-doctor-hover-profile {
     top: 80px;
     z-index: 9999;
     right: 0;
@@ -256,7 +252,13 @@ a {
     margin-right: 20px;
     transition: all 0.3s ease-in-out;
 }
-.sh-doc-cart-container{
+
+.sh-doctor-profile:hover .sh-doctor-hover-profile {
+    right: 0;
+    display: block;
+}
+
+.sh-doc-cart-container {
     width: 250px;
     padding: 10px;
     border-radius: 5px;
@@ -264,17 +266,22 @@ a {
     background: white;
     border: 1px solid #70809063;
 }
-.sh-doc-hover-image{
+
+.sh-doc-hover-image {
     text-align: center;
 }
-.sh-doc-hover-image img{
+
+.sh-doc-hover-image img {
     width: 40%;
     border-radius: 50%;
     border: 1px solid red;
 }
-.sh-doc-cart-container a{
+
+.sh-doc-cart-container a {
     color: black;
 }
+
+
 /*  === FILLTER === */
 .sh-fillter {
     width: 100%;
@@ -433,7 +440,8 @@ td {
     align-items: center;
     justify-content: center;
 }
-.sh-pagination i{
+
+.sh-pagination i {
     display: none;
 }
 
@@ -567,10 +575,12 @@ td {
         align-items: center;
         justify-content: center;
     }
-    .sh-pagination i{
+
+    .sh-pagination i {
         display: block;
     }
-    .sh-pagination span{
+
+    .sh-pagination span {
         display: none;
     }
 
