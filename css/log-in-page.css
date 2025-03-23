@@ -158,3 +158,27 @@ header{
     background: none;
     font-size: var(--primary-size);
 }
+@media(max-width: 768px){
+    header{
+        width: 100%;
+        padding: 10px;
+    }
+    .sh-doctor-sign-up-container{
+        width: 100%;
+    }
+    .sh-doctor-sign-up-container label{
+        font-size: 1rem;
+    }
+    .sh-patients-sign-up-container{
+        width: 100%;
+    }
+    .sh-patients-sign-up-container label{
+        font-size: 1rem;
+    }
+    .sh-patients-log-in-container{
+        width: 100%;
+    }
+    .sh-patients-log-in-container label{
+        font-size: 1rem;
+    }
+}
