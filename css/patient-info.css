@@ -276,6 +276,9 @@ a {
     width: 100%;
     line-height: 2em;
 }
+.sh-info-box label{
+    font-size: 1.15rem;
+}
 
 .sh-patient-information-container input {
     width: 100%;
@@ -494,6 +497,8 @@ a {
 
     .sh-patient-information-container {
         padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .sh-patient-information-section,
@@ -591,5 +596,8 @@ a {
     .sh-pdf-download {
         width: 100%;
         padding: 10px;
+    }
+    .sh-info-box label{
+        font-size: 1.15rem;
     }
 }
